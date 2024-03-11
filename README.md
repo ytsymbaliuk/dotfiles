@@ -4,6 +4,10 @@
 
 ```bash
 brew install stow
-#Adopt existing config and create simlimk
+
+# Simulate adopt existing config
+stow --adopt -nvt ~ .
+
+# Adopt existing config and create simlimk
 stow --adopt -vt ~ .
 ```
