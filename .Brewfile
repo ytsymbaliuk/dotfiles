@@ -1,10 +1,14 @@
 tap "beeftornado/rmtree"
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/core"
 tap "homebrew/services"
 tap "jandedobbeleer/oh-my-posh"
 tap "powershell/tap"
 tap "smudge/smudge"
+# Perf monitoring CLI tool for Apple Silicon
+brew "asitop"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -23,6 +27,8 @@ brew "fzf"
 brew "git"
 # Kubernetes package manager
 brew "helm"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Kubernetes command-line interface
@@ -81,6 +87,8 @@ cask "imageoptim"
 cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
+# Blocks all Keyboard and TouchBar input
+cask "keyboardcleantool"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Web browser
@@ -105,8 +113,12 @@ cask "rancher"
 cask "raycast"
 # Block your own access to distracting websites
 cask "selfcontrol"
+# Screenshot measurement and annotation tool
+cask "shottr"
 # System monitor for the menu bar
 cask "stats"
+# Remote access and connectivity software focused on security
+cask "teamviewer"
 # Open-source BitTorrent client
 cask "transmission"
 # AI image upscaler
