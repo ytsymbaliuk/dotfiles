@@ -77,7 +77,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl-autocomplete docker-compose sudo colored-man-pages)
+plugins=(git kubectl-autocomplete docker-compose sudo colored-man-pages docker)
 
 # HomeBrew
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -143,5 +143,7 @@ eval "$(zoxide init zsh)"
 # iTerm2 shell integration
 # https://iterm2.com/documentation-shell-integration.html
 #source ~/.iterm2_shell_integration.zsh
+export EDITOR='code'
 
 source ~/.aliases
+source ~/.docker_aliases

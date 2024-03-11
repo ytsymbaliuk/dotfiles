@@ -7,13 +7,15 @@
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias cls='clear'
+
 # Eza: ls replacement
 # https://github.com/eza-community/eza?tab=readme-ov-file
-alias ls="eza"
-alias ll="eza -lh"
-alias la="eza -lAh"
+alias ls="eza --icons=auto --group-directories-first"
+alias ll="eza -lh --icons=auto --group-directories-first"
+alias la="eza -lAh  --icons=auto --group-directories-first"
 
-alias tree="eza --tree"
+alias tree="eza --tree --icons=auto"
 
 # bat: cat replacement
 # https://github.com/sharkdp/bat
@@ -27,3 +29,21 @@ alias cdi="zi"
 alias k="kubectl"
 alias kctx="kubectl-ctx"
 alias kns="kubectl-ns"
+
+# Git
+alias gst="git status"
+alias gb="git branch"
+alias gco="git checkout"
+alias gl="git log --oneline --decorate --color"
+alias amend="git add . && git commit --amend --no-edit"
+alias gc="git add . && git commit -m"
+alias gdiff="git diff"
+alias gforce="git push --force"
+alias nuke="git clean -df && git reset --hard"
+alias gpop="git stash pop"
+alias gpull="git pull"
+alias gpush="git push"
+alias gresolve="git add . && git commit --no-edit"
+alias gstash="git stash -u"
+alias gunstage="git restore --staged ."
+alias wip="commit wip"
