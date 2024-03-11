@@ -1,17 +1,30 @@
+tap "beeftornado/rmtree"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "jandedobbeleer/oh-my-posh"
 tap "powershell/tap"
 tap "smudge/smudge"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Bash, Zsh and Fish completion for Docker
 brew "docker-completion"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Modern, maintained replacement for ls
+brew "eza"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Distributed revision control system
 brew "git"
 # Kubernetes package manager
 brew "helm"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -24,10 +37,14 @@ brew "minikube"
 brew "oh-my-posh"
 # Theme for zsh
 brew "powerlevel10k"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Next-generation plugin manager for zsh
 brew "zplug"
 # A CLI for configuring 'Night Shift' on macOS 🌕🌖🌗🌘🌑
@@ -38,10 +55,14 @@ cask "alfred"
 cask "alt-tab"
 # Application uninstaller
 cask "appcleaner"
+# Chromium based browser
+cask "arc"
 # Tool to list all active shortcuts of the current application
 cask "cheatsheet"
 # Run Stable Diffusion locally
 cask "diffusionbee"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Video and audio player
 cask "elmedia-player"
 # Developer targeted fonts with a high number of glyphs
@@ -54,7 +75,7 @@ cask "grammarly-desktop"
 cask "hiddenbar"
 # Free and open-source media player
 cask "iina"
-# Tool to optimize images to a smaller size
+# Tool to optimise images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
@@ -62,14 +83,18 @@ cask "iterm2"
 cask "itsycal"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Web browser
+cask "microsoft-edge"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # YouTube application
 cask "minitube"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
 # Calendar for professionals and teams
 cask "notion-calendar"
+# Web browser
+cask "opera"
 # Used to access context-specific actions when text is selected
 cask "popclip"
 # Command-line shell and scripting language
@@ -106,6 +131,7 @@ mas "Hidden Bar", id: 1452453066
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
+mas "Microsoft Word", id: 462054704
 mas "MyWallpaper", id: 1552826194
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -128,5 +154,7 @@ vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-vscode.azure-account"
 vscode "ms-vscode.powershell"
 vscode "msazurermtools.azurerm-vscode-tools"
+vscode "pkief.material-icon-theme"
 vscode "redhat.vscode-yaml"
 vscode "streetsidesoftware.code-spell-checker"
+vscode "vscode-icons-team.vscode-icons"
