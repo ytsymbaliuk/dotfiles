@@ -77,7 +77,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl-autocomplete docker-compose)
+plugins=(git kubectl-autocomplete docker-compose sudo)
 
 # HomeBrew
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -101,14 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -141,5 +133,15 @@ source ~/.minikube-completion
 export PATH="/Users/d3vnu11/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-#Oh-my-Posh
+# Oh-my-Posh
 #eval "$(oh-my-posh init zsh)"
+
+# Zoxide
+# https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init zsh)"
+
+# iTerm2 shell integration
+# https://iterm2.com/documentation-shell-integration.html
+#source ~/.iterm2_shell_integration.zsh
+
+source ~/.aliases.zsh
