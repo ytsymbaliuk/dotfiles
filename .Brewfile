@@ -45,6 +45,8 @@ brew "oh-my-posh"
 brew "powerlevel10k"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Tool to build, change, and version infrastructure
+brew "terraform"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
@@ -89,6 +91,10 @@ cask "iterm2"
 cask "itsycal"
 # Blocks all Keyboard and TouchBar input
 cask "keyboardcleantool"
+# Utility that shows the latest app updates
+cask "latest"
+# Controls and monitors all fans on Apple computers
+cask "macs-fan-control"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Web browser
@@ -145,6 +151,7 @@ mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Microsoft Word", id: 462054704
 mas "MyWallpaper", id: 1552826194
+mas "Nightshift", id: 1561604170
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Telegram", id: 747648890
